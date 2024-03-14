@@ -1,8 +1,12 @@
 def checkio(words: str) -> bool:
+    s = 0
     for w in words.split():
-        if not w.isalpha():
-            return False
-    return True
+        if w.isalpha():
+            s += 1
+            if s > 2: return True
+        else:
+            s = 0
+    return False
 
 print("Example:")
-print(checkio("Hello World 1 hello"))
+print(checkio("He is man"))
