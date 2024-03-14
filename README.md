@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-=======
-# This is my CheckIO solution
-![](https://www.gravatar.com/avatar/e017ca80fb6f09f90c93e64567006240?s=80)
->>>>>>> b62f06c692f28e5e03f8d696bc8a13f578b2c6b6
-
 ![avatar CheckIO](https://www.gravatar.com/avatar/e017ca80fb6f09f90c93e64567006240?s=80)
 # This is my CheckIO solution
 * Every files will names as task in same directory
