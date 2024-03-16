@@ -1,11 +1,5 @@
-def end_zeros(a: int) -> int:
-    cnt = 0
-    for x in str(a)[::-1]:
-        if x == "0":
-            cnt += 1
-        else:
-            break
-    return cnt
+def end_zeros(num: int) -> int:
+    return len(str(num)) - len(str(num).rstrip('0'))
 
 print("Example:")
-print(end_zeros(10000000))
+print(end_zeros(0))
