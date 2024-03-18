@@ -1,7 +1,7 @@
 def middle(text: str) -> str:
-    if len(text) % 2 == 0:
-        return text[int(len(text)/2)-1:int(len(text)/2) +1]
-    return text[int(len(text)/2):int(len(text)/2)+1]
+    a = int(len(text)/2)
+    return text[a-1:a+1] if len(text) % 2 == 0 else text[a:a+1]
 
 print("Example:")
 print(middle("example"))
+print(middle("examples"))
