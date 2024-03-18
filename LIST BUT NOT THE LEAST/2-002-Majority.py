@@ -1,5 +1,5 @@
 def is_majority(items: list[bool]) -> bool:
-    return False if len(items) < 1 else not (items.count(False) >= items.count(True))
+    return sum(items) > len(items) / 2
 
 
 print("Example:")
