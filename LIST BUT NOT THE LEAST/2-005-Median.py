@@ -1,9 +1,7 @@
 def checkio(data: list[int]) -> int | float:
-    res = sorted(data)
-    if len(data) % 2 != 0:
-        return res[int(len(res) / 2)]
-
-    return float((res[int(len(res) / 2) - 1] + res[int(len(res) / 2)])) / 2
+    data.sort()
+    n = len(data) // 2
+    return sum(data[n-1:n+1]) / 2 if len(data) % 2 == 0 else data[n]
 
 print("Example:")
 
