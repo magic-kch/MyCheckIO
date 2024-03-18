@@ -2,11 +2,8 @@ from collections.abc import Iterable
 
 
 def replace_first(items: list) -> Iterable:
-    if len(items) <= 1:
-        return items
-    else:
-        st = items.pop(0)
-        items.append(st)
+    if items:
+        items.append(items.pop(0))
     return items
 
 # These "asserts" are used for self-checking
