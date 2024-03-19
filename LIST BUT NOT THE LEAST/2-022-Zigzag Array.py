@@ -5,7 +5,7 @@ def create_zigzag(rows: int, cols: int, start: int = 1) -> list[list[int]]:
         if i % 2 != 0:
             res.append(tmp[cols*(i-1):cols * (i-1) + cols])
         else:
-            tmp1 = tmp[cols * (i-1) : cols * (i-1) + cols]
+            tmp1 = tmp[cols * (i-1):cols * (i-1) + cols]
             res.append(tmp1[::-1])
     return res
 
