@@ -1,10 +1,6 @@
 def non_empty_lines(text: str) -> int:
-    count = 0
     word = text.split("\n")
-    for x in word:
-        if x.strip():
-            count += 1
-    return count
+    return sum(1 for x in word if x.strip())
 
 print("Example:")
-print(non_empty_lines("one\n\n simple line\n"))
+print(non_empty_lines("\none\n\n simple\n line\n"))
