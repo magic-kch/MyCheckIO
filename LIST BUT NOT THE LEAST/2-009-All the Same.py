@@ -2,7 +2,7 @@ from typing import List, Any
 
 
 def all_the_same(elements: List[Any]) -> bool:
-    return len(elements) <= 1 or elements.count(elements[0]) == len(elements)
+    return len(set(elements)) <= 1
 
 print("Example:")
 print(all_the_same([1, 1, 1]))
