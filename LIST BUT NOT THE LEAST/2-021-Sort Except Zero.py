@@ -1,16 +1,8 @@
-from collections.abc import Iterable
-
-
-def except_zero(items: list[int]) -> Iterable[int]:
-    if items.count(0) < 1:
-        return sorted(items)
-    elif items.count(0) == len(items):
-        return items
-    n_items = sorted(items)
-    n_items = n_items[items.count(0):]
+def except_zero(items: list[int]):
+    n_items = sorted(list(filter(lambda x: x != 0, items)))
     for idx, i in enumerate(items):
         if i == 0:
-            n_items.insert(idx, 0)
+            n_items.insert(idx, i)
     return n_items
 
 print("Example:")
